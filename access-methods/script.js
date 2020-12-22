@@ -30,7 +30,7 @@ let qsa = document.querySelectorAll("div, #main, .no.le, b[class='bro']");
 
 //more specific
 qsa = document.querySelectorAll("#main > span");
-console.log(qsa.length);
-for (let i of qsa) {
-  console.log(i);
-}
+// console.log(qsa.length);
+// for (let i of qsa) {
+//   console.log(i);
+// }
