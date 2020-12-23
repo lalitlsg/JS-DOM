@@ -119,3 +119,28 @@
 
 // b.insertAdjacentText("beforebegin", text);
 // b.insertAdjacentText("afterend", text);
+
+// let a = document.getElementById("div2");
+// let n = "<p>Changed</p>";
+// a.innerHTML = n;
+
+// let a = document.getElementById("div2");
+// console.log(a.outerHTML);
+// a.outerTML = "<b>outerHTML</b>";
+// console.log(a);
+// let a = document.getElementById("div2").firstElementChild;
+// a.innerText = "Third";
+
+// let a = document.getElementById("div2");
+// let b = a.cloneNode(true);
+// let c = document.getElementById("div3");
+// c.appendChild(b);
+
+// let a = document.getElementById("div2");
+// a.removeChild(a.lastElementChild);
+
+let a = document.getElementById("div1").lastElementChild;
+let b = document.getElementById("div2");
+// let c = document.createElement("button");
+// c.textContent = "New Btn";
+b.replaceChild(a, b.lastElementChild);
