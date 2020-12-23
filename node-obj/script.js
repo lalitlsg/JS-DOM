@@ -139,8 +139,25 @@
 // let a = document.getElementById("div2");
 // a.removeChild(a.lastElementChild);
 
-let a = document.getElementById("div1").lastElementChild;
-let b = document.getElementById("div2");
+// let a = document.getElementById("div1").lastElementChild;
+// let b = document.getElementById("div2");
 // let c = document.createElement("button");
 // c.textContent = "New Btn";
-b.replaceChild(a, b.lastElementChild);
+// b.replaceChild(a, b.lastElementChild);
+
+let a = document.getElementById("div2").firstElementChild.firstChild;
+// console.log(a.data);
+// a.data = "Third";
+// a.appendData("-Third");
+
+// a.deleteData(0, 3);
+
+// a.insertData(3, "Hi");
+
+// a.replaceData(0, 3, "Third");
+
+// let r = a.splitText(3);
+// console.log(r);
+
+// let r = a.substringData(0, 3);
+// console.log(r);
