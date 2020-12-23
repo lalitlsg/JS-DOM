@@ -145,7 +145,7 @@
 // c.textContent = "New Btn";
 // b.replaceChild(a, b.lastElementChild);
 
-let a = document.getElementById("div2").firstElementChild.firstChild;
+// let a = document.getElementById("div2").firstElementChild.firstChild;
 // console.log(a.data);
 // a.data = "Third";
 // a.appendData("-Third");
@@ -161,3 +161,51 @@ let a = document.getElementById("div2").firstElementChild.firstChild;
 
 // let r = a.substringData(0, 3);
 // console.log(r);
+
+let a = document.getElementById("div3").firstElementChild;
+// console.log(a);
+// console.log(a.className);
+// a.className = "all";
+// console.log(a);
+
+// console.log(a.attributes);
+// for(let i of a.attributes){
+//     console.log(i)
+// }
+
+// a.setAttribute("id", "new-id");
+// a.setAttribute("style", "color: red");
+
+// console.log(a.getAttribute("id"));
+
+// a.removeAttribute("id");
+// console.log(a.hasAttribute("id"));
+// console.log(a);
+
+// a.style.color = "green";
+// a.style.backgroundColor = "grey";
+
+// a.className = "cl2";
+// console.log(a.classList.item(0));
+// a.classList.replace("cl1", "cl2");
+// a.classList.remove("cl2");
+// console.log(a.classList.contains("cl1"));
+
+// a.classList.toggle("cl2");
+// a.classList.toggle("cl2");
+
+// let cs = a.style;
+// cs.cssText = "font-size: 30px";
+// console.log(cs.length);
+
+// console.log(cs[0]);
+// console.log(cs.getPropertyValue("color"));
+
+// cs.removeProperty("color");
+
+// cs.setProperty("font-size", "30px", "important");
+
+// console.log(cs.getPropertyPriority("font-size"));
+
+let p = window.getComputedStyle(a);
+console.log(p.color);
