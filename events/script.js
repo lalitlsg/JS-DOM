@@ -20,7 +20,7 @@
 // view.removeEventListener("click", show);
 
 document.getElementById("first").addEventListener(
-  "click",
+  "mouseout",
   e => {
     console.log(1);
     // console.log(e.currentTarget);
@@ -29,21 +29,21 @@ document.getElementById("first").addEventListener(
   false
 );
 document.getElementById("second").addEventListener(
-  "click",
+  "mouseout",
   () => {
     console.log(2);
   },
   false
 );
-document.getElementById("third").addEventListener("click", () => {
+document.getElementById("third").addEventListener("mouseout", () => {
   console.log(3), false;
 });
 document.getElementById("forth").addEventListener(
-  "click",
+  "mouseout",
   e => {
     console.log(4);
     // e.stopPropagation();
-    e.stopImmediatePropagation();
+    // e.stopImmediatePropagation();
   },
   false
 );
@@ -52,7 +52,7 @@ const forth_2 = () => {
   console.log("_4");
 };
 
-document.getElementById("forth").addEventListener("click", forth_2);
+// document.getElementById("forth").addEventListener("click", forth_2);
 
 document.getElementById("lsg").addEventListener(
   "click",
@@ -61,3 +61,25 @@ document.getElementById("lsg").addEventListener(
   },
   false
 );
+
+let inp = document.getElementById("in");
+// inp.addEventListener("focus", () => {
+//   console.log("focus");
+// });
+// inp.addEventListener("blur", () => {
+//   console.log("blur");
+// });
+// inp.addEventListener("focusin", () => {
+//   console.log("focusin");
+// });
+// inp.addEventListener("focusout", () => {
+//   console.log("focusout");
+// });
+
+const onKey = e => {
+  console.log(`${e.data} - ${e.keyCode} - ${String.fromCharCode(e.keyCode)}`);
+};
+
+inp.addEventListener("keydown", onKey);
+inp.addEventListener("textInput", onKey);
+inp.addEventListener("keyup", onKey);
