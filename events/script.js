@@ -83,3 +83,16 @@ const onKey = e => {
 inp.addEventListener("keydown", onKey);
 inp.addEventListener("textInput", onKey);
 inp.addEventListener("keyup", onKey);
+
+// console.log(window.outerHeight);
+// console.log(window.outerWidth);
+// console.log(window.innerHeight);
+// console.log(window.innerWidth);
+
+// window.alert("Continue?");
+
+// let c = window.confirm("Is OK");
+// console.log(c);
+
+// let x = window.prompt("Enter name", "Lalit");
+// console.log(x);
