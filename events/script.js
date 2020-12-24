@@ -21,25 +21,43 @@
 
 document.getElementById("first").addEventListener(
   "click",
-  () => {
+  e => {
     console.log(1);
+    // console.log(e.currentTarget);
+    // console.log(e.target);
   },
-  true
+  false
 );
 document.getElementById("second").addEventListener(
   "click",
   () => {
     console.log(2);
   },
-  true
+  false
 );
 document.getElementById("third").addEventListener("click", () => {
-  console.log(3), true;
+  console.log(3), false;
 });
 document.getElementById("forth").addEventListener(
   "click",
-  () => {
+  e => {
     console.log(4);
+    // e.stopPropagation();
+    e.stopImmediatePropagation();
   },
-  true
+  false
+);
+
+const forth_2 = () => {
+  console.log("_4");
+};
+
+document.getElementById("forth").addEventListener("click", forth_2);
+
+document.getElementById("lsg").addEventListener(
+  "click",
+  e => {
+    e.preventDefault();
+  },
+  false
 );
